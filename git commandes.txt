@@ -50,5 +50,7 @@ git push nomDepot (nom remote GitHub : origin) nomBranche (master)(mettre le rep
 git push nomDepot --all (permet de mettre toutes les branches sur le dépôt)
 git pull origin master ( récupère le git distant sur le local sur la branche master)
 
+Bravo c'est un très joli recap de commandes !! :)
+
 
 
