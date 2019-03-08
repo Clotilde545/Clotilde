@@ -1,3 +1,5 @@
+okhjmtqruhmsud
+
 git cd "chemin du fichier"
 git init
 git config user.name
