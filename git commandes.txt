@@ -1,0 +1,51 @@
+git cd "chemin du fichier"
+git init
+git config user.name
+git config user.email
+git status
+git add (--all) (-A) nomFichier
+git commit (-am "commentaire") (-m "commentaire) (--amend)
+git rm nomFichier
+git show (tag) (id d'un commit)
+git tag git (nomTag) (-a -m "commentaire") (id-commit) --list -n5
+git reset --hard
+git blame
+git diff (nom fichier) id_commit1 id_commit2 (ou les tags)
+git log --oneline --graph (pour afficher graphiquement les branches) --all
+git help commande
+git checkout -- nomFichier (récupérer un fichier depuis le dernier commit)
+.gitignore
+git tag v1.1 -d (supprimer un tag)
+git branch (montre les branches)
+git branch -v (montre les branches avec les derniers commit)
+git branch newBranche (ajout d'une branche dans la branche en cours)
+git checkout newBranche (pour changer de branche)
+git checkout -b autreBranche (création d'une nouvelle branche et on est directement dessus)
+git branch nombranche -d (suppression de la branche)
+
+pour fusionner 2 branches (suppression, ajout de fichiers ou dans le fichier) : se mettre sur la branche final puis
+git merge brancheAFusionner
+
+Pour changer de branche sans commit  attention si nouveau fichier penser à faire un add
+git stash (création d'une remise) -u (pour un nouveau fichier ou dossier qui n'est pas dans le staging) -m "commentaire"
+git stash list git  (plus récent =0 puis 1 : attention cela change à chaqsue nouveau stash )
+git stash show stash@{x}        permet de voir ce qu'il y a dans le stah x
+git stash apply (révient à l'état avant le dernier stash)
+git stash apply stash@{x} (faire revenir le stash x au staging)
+git stash drop (supprime le stash le plus récent)
+git stash drop stash@{x}(supprime le stashx)
+git stash clear (permet de supprimer tous les stah d'un coup)
+git stash pop (=apply + drop) sur le dernier stash ; pour le stash x ajouter stash@{x}
+
+git push origin --tag (pour mettre les tag sur Git Hub)
+
+Git Hub
+git remote add nom (plupart du tps :origin) puis url du projet sur GitHub
+git remote affiche tous les remote
+git remote remove origin (suppression du lien origin)
+git push nomDepot (nom remote GitHub : origin) nomBranche (master)(mettre le repository local vers le git hub: celui qui reçoit d'abord)
+git push nomDepot --all (permet de mettre toutes les branches sur le dépôt)
+git pull origin master ( récupère le git distant sur le local sur la branche master)
+
+
+
