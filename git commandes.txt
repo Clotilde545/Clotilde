@@ -1,3 +1,6 @@
+NE SURTOUT PAS OUBLIER D'Initialiser le dossier dans GIT ;)
+
+
 git cd "chemin du fichier"
 git init
 git config user.name
